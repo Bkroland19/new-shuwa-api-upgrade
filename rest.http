@@ -1,0 +1,67 @@
+GET http://localhost:4000/
+
+#### User registering
+POST http://localhost:4000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username":"testpaul",
+    "email":"testpaul@gmail.com",
+    "mobile":"0707796321",
+    "password":"test"
+}
+
+#### User login
+POST http://localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+{
+   "username":"testpaul",
+    "password":"test"
+}
+
+
+####upload
+POST http://localhost:4000/api/v1/upload
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjc3NjM5MTE3LCJleHAiOjE2Nzc3MjU1MTcsImF1ZCI6WyI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLG51bGxdfQ.IRX7V-Tp7zwu8iMnWiRUpoUbgclSWc2vUmNAj26Gjik
+
+
+
+####create-user
+POST http://localhost:4000/api/v1/create-user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjc3NjM5MTE3LCJleHAiOjE2Nzc3MjU1MTcsImF1ZCI6WyI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLG51bGxdfQ.IRX7V-Tp7zwu8iMnWiRUpoUbgclSWc2vUmNAj26Gjik
+
+{
+   "username":"m43444",
+	"email":"ma1454434354544@gmail.com",
+	"mobile":"0774078864",
+	"status":"Available",
+    "location":"Kampala",
+    "price":"250K"
+
+}
+####get request
+
+GET http://localhost:4000/api/v1/created-user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjc3NjM5MTE3LCJleHAiOjE2Nzc3MjU1MTcsImF1ZCI6WyI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLG51bGxdfQ.IRX7V-Tp7zwu8iMnWiRUpoUbgclSWc2vUmNAj26Gjik
+
+####patch request
+
+PATCH  http://localhost:4000/api/v1/patch/63fec451342dacdae23f414b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNjc3NjM5MTE3LCJleHAiOjE2Nzc3MjU1MTcsImF1ZCI6WyI2M2ZkNjllMDkwMjdiNmRjNmJlODc1ZGMiLG51bGxdfQ.IRX7V-Tp7zwu8iMnWiRUpoUbgclSWc2vUmNAj26Gjik
+
+{
+    "username": "weew43444",
+    "email": "mweewewwe454434354544@gmail.com",
+    "mobile": "0774077764",
+    "age": 21,
+    "location": "Kampala",
+    "color": "Dark",
+    "price": "450k",
+    "status": "Available",
+    "images": []
+}
